@@ -16,13 +16,14 @@ function App() {
         <Route index element={<PostsPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Route>
-    )
+    ),
+    {basename: "/redux-test-project"}
   );
 
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <RouterProvider router={router} />
+        <RouterProvider router={router}/>
       </PersistGate>
     </Provider>
   )
