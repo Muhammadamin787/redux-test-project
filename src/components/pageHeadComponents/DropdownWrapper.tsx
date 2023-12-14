@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 import { Button, Popover } from 'antd';
-import { useState } from 'react';
+import { useState, PropsWithChildren } from 'react';
 
-const DropdownWrapper = ({ children }) => {
+const DropdownWrapper = ({ children }: PropsWithChildren) => {
 
      // Hooks
      const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +9,7 @@ const DropdownWrapper = ({ children }) => {
      const togglePoppover = () => {
           setIsOpen((prev) => !prev)
      }
-     
+
      return (
           <Popover
                content={

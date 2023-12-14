@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from "../../../../hooks/useToolkitHook
 import { IPost } from "../../../../types";
 import { selectorPostsModal, selectorUsers } from "../../../selectors";
 import { useSavePostMutation } from "../../../services/postApi";
-import { setAddPost, setClosePostsModal, setPosts } from "../postSlice";
+import { setAddPost, setClosePostsModal } from "../postSlice";
 import CancelButton from "./CancelButton";
 
 const PostModal = () => {

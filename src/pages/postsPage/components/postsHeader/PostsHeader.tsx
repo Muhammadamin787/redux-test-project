@@ -1,13 +1,12 @@
 import { setFavouritesActive, setOpenPostsModal, setPostSearch } from "../../../../app/features/post/postSlice";
 import { selectorIsFavouritesActive, selectorPostsSearch } from "../../../../app/selectors";
-import FavouritesSwitcher from "../../../../components/header/components/FavouritesSwitcher";
-import FilterUsers from "../../../../components/header/components/FilterUsers";
 import HeaderTitle from "../../../../components/header/HeadTitle";
 import HeaderSearch from "../../../../components/header/HeaderSearch";
+import FavouritesSwitcher from "../../../../components/header/components/FavouritesSwitcher";
+import FilterUsers from "../../../../components/header/components/FilterUsers";
 import PostHeaderApplyButtons from "../../../../components/header/headerApplyButtons/PostHeaderApplyButtons";
 import { useAppDispatch } from "../../../../hooks/useToolkitHooks";
 import HeaderLayout from "../headerLayout/HeaderLayout";
-import HeaderSection from "../headerLayout/HeaderSection";
 import "./postsHeader.scss";
 
 const PostHeader = () => {

@@ -1,13 +1,7 @@
 /** @format */
 
-import { Layout } from "antd";
-import { PropsWithChildren } from "react";
-// const PostsPage = lazy(() => import("./postsPage/PostsPage"));
-// const AlbumPage = lazy(() => import("./albumsPage/AlbumPage"));
-// const TodosPage = lazy(() => import("./todosPage/TodosPage"));
+import { Layout, Tabs } from "antd";
 import { Outlet, useNavigate } from 'react-router-dom';
-import { Tabs } from 'antd';
-import { useTransition } from 'react';
 
 const menuItems = [
     {
@@ -26,11 +20,10 @@ const menuItems = [
 
 const layoutStyle = { height: "100vh", backgroundColor: "#fff", padding: "0px 40px" }
 
-const MainLayout = ({ children }: PropsWithChildren) => {
+const MainLayout = () => {
 
     // Helper Hooks
     const navigate = useNavigate();
-    const [isPending, startTransition] = useTransition()
 
     // Functions
     const onChange = (key: string) => {
