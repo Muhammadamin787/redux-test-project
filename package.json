@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "homepage": "https://muhammadamin787.github.io/redux-test-project/",
+    "homepage": ".",
     "scripts": {
         "dev": "vite",
         "test": "vitest run --reporter=verbose",
