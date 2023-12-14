@@ -1,0 +1,77 @@
+/** @format */
+.posts-page {
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+}
+
+// pageHead.scss is here
+
+.posts-main {
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 7px !important;
+    }
+
+    /* Track */
+    // & ::-webkit-scrollbar-track {
+    //     background: blue;
+    // }
+
+    /* Handle */
+    // &::-webkit-scrollbar-thumb {
+    //     border-radius: 3px;
+    //     background-color: blue;
+    // }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    .posts-body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 17px;
+        align-items: start;
+
+        .post-card {
+            display: flex;
+            flex-flow: column wrap;
+
+            // @Ovveride antd styles
+            .ant-card {
+                display: flex;
+                flex-grow: 1;
+                flex-direction: column;
+                .ant-card-body {
+                    flex-grow: 1;
+                    .ant-card-meta-description {
+                        max-height: 88px;
+                    }
+                }
+            }
+        }
+
+        .not-found-text {
+            color: #aaa;
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            padding: 20px 0 40px 0;
+            text-align: center;
+        }
+        .comment-list {
+            border: 1px solid #f0f0f0;
+            border-top: none;
+            height: 220px;
+            background-color: #fff;
+            overflow: auto;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 4px;
+            }
+        }
+    }
+}

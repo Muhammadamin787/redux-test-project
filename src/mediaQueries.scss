@@ -1,0 +1,433 @@
+/** @format */
+
+@media only screen and (max-width: 600px) {
+    .main-layout {
+        padding: 0 20px 0 20px !important;
+    }
+
+    .posts-page,
+    .albums-page,
+    .todos-page {
+        height: 88vh !important;
+
+        .posts-main,
+        .albums-main,
+        .todos-main {
+            margin-top: 22px !important;
+            .posts-body,
+            .albums-body,
+            .todos-body {
+                gap: 0px !important;
+
+                .post-card,
+                .album-card {
+                    margin-top: -7px !important;
+                    width: 100% !important;
+
+                    .ant-card {
+                        width: 100% !important;
+                        .ant-card-body {
+                            padding: 13px;
+                        }
+                    }
+                }
+
+                .todo-container {
+                    margin-bottom: 13px;
+                    border: 1px solid #aaa;
+                    flex-direction: column;
+                    margin-right: 4px;
+                    gap: 5px !important;
+                    display: flex;
+                    padding-bottom: 5px;
+                    justify-content: left;
+
+                    .ant-ribbon-wrapper {
+                        width: 95% !important;
+                        .ant-card {
+                            height: 65px;
+                            .ant-card-body {
+                                .ant-card-meta-title {
+                                    width: 100% !important;
+                                    text-overflow: ellipsis;
+                                    white-space: break-spaces;
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                    .todo-actions {
+                        display: flex;
+                        width: 95%;
+                        padding-right: 8px;
+                        justify-content: space-between !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-tabs {
+        text-align: center;
+        margin: 0px auto;
+
+        .ant-tabs-tab {
+            padding: 5px 7px;
+            font-size: 1.1em;
+        }
+    }
+
+    .page-head {
+        text-align: center;
+
+        .head-filter-section {
+            flex-direction: column;
+            gap: 10px !important;
+            margin: -6px 0;
+            position: relative;
+
+            .head-title {
+                width: 100%;
+                font-size: 1.1em;
+                justify-content: space-between;
+                align-items: center;
+
+                .head-add-button {
+                    margin-top: 0 !important;
+                }
+            }
+            .head-filters {
+                margin: -3px 0 -7px 0 !important;
+                flex-direction: column;
+                width: 100%;
+                gap: 7px !important;
+
+                & > * {
+                    width: 100% !important;
+                }
+
+                .favourites-switcher {
+                    display: flex;
+                    justify-content: left;
+                }
+            }
+            .head-apply-all-button {
+                box-shadow: 0 3px 11px rgba(190, 190, 190, 0.9);
+                background-color: #fff;
+                padding: 25px;
+                position: absolute;
+                margin: 5px 0 9px 0;
+                right: 0;
+                top: 0;
+
+                & > button {
+                    &:first-child {
+                        margin-bottom: 5px;
+                    }
+                    width: 100% !important;
+                }
+            }
+        }
+        .head-sorters {
+            padding: 0 0 10px 0 !important;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 840px) {
+    .main-layout {
+        padding: 0 15px 0 15px !important;
+    }
+
+    .posts-main,
+    .albums-main,
+    .todos-main {
+        margin-top: 22px !important;
+        .posts-body,
+        .albums-body,
+        .todos-body {
+            gap: 0px !important;
+            flex-direction: row;
+
+            .post-card,
+            .album-card {
+                margin-top: -7px !important;
+                width: 100% !important;
+                margin-right: 10px;
+
+                .ant-card {
+                    width: 100% !important;
+                    .ant-card-body {
+                        padding: 13px;
+                    }
+                }
+            }
+
+            .todo-container {
+                margin-bottom: 13px;
+                border: 1px solid #aaa;
+                flex-direction: column;
+                margin-right: 4px;
+                gap: 5px !important;
+                display: flex;
+                padding-bottom: 5px;
+                justify-content: left;
+
+                .ant-ribbon-wrapper {
+                    width: 95% !important;
+                    .ant-card {
+                        height: 65px;
+                        .ant-card-body {
+                            .ant-card-meta-title {
+                                width: 100% !important;
+                                text-overflow: ellipsis;
+                                white-space: break-spaces;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                .todo-actions {
+                    display: flex;
+                    width: 95%;
+                    padding-right: 8px;
+                    justify-content: space-between !important;
+                }
+            }
+        }
+    }
+
+    .main-tabs {
+        text-align: center;
+        margin: 0px auto;
+
+        .ant-tabs-tab {
+            padding: 5px 7px;
+            font-size: 1.1em;
+        }
+    }
+    .page-head {
+        text-align: center;
+
+        .head-filter-section {
+            flex-direction: column;
+            margin: -6px 0;
+            position: relative;
+            .head-filters {
+                margin: -3px 0 -7px 0 !important;
+                width: 100%;
+                gap: 7px !important;
+
+                & > * {
+                    flex-grow: 1;
+                }
+
+                .favourites-switcher {
+                    display: flex;
+                    justify-content: left;
+                }
+            }
+            .head-apply-all-button {
+                box-shadow: 0 3px 11px rgba(190, 190, 190, 0.9);
+                background-color: #fff;
+                padding: 25px;
+                position: absolute;
+                margin: 5px 0 9px 0;
+                z-index: 100;
+                right: 0;
+                top: 0;
+
+                & > button {
+                    &:first-child {
+                        margin-bottom: 5px;
+                    }
+                    width: 100% !important;
+                }
+            }
+        }
+        .head-sorters {
+            margin-top: 5px;
+        }
+    }
+    body {
+        border: 2px solid red;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    .posts-main,
+    .albums-main,
+    .todos-main {
+        margin-top: 22px !important;
+        .posts-body,
+        .albums-body,
+        .todos-body {
+            gap: 0px !important;
+            display: flex;
+            justify-content: space-between;
+
+            .post-card,
+            .album-card {
+                margin-top: -7px !important;
+                width: 48% !important;
+                margin-right: 10px;
+
+                .ant-card {
+                    width: 100% !important;
+                    .ant-card-body {
+                        padding: 13px;
+                    }
+                }
+            }
+
+            .todo-container {
+                margin-bottom: 13px;
+                border: 1px solid #aaa;
+                flex-direction: column;
+                margin-right: 4px;
+                gap: 5px !important;
+                display: flex;
+                padding-bottom: 5px;
+                justify-content: left;
+
+                .ant-ribbon-wrapper {
+                    width: 95% !important;
+                    .ant-card {
+                        height: 65px;
+                        .ant-card-body {
+                            .ant-card-meta-title {
+                                width: 100% !important;
+                                text-overflow: ellipsis;
+                                white-space: break-spaces;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+                .todo-actions {
+                    display: flex;
+                    width: 95%;
+                    padding-right: 8px;
+                    justify-content: space-between !important;
+                }
+            }
+        }
+    }
+    .head-filters {
+        margin: -3px 0 -7px 0 !important;
+        flex-direction: column;
+        width: 100%;
+        gap: 7px !important;
+
+        & > * {
+            width: 100% !important;
+        }
+
+        .favourites-switcher {
+            display: flex;
+            justify-content: left;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1090px) {
+    .head-apply-all-button {
+        box-shadow: 0 3px 11px rgba(190, 190, 190, 0.9);
+        background-color: #fff;
+        padding: 25px;
+        position: absolute;
+        margin: 5px 0 9px 0;
+        right: 0;
+        top: 0;
+
+        & > button {
+            &:first-child {
+                margin-bottom: 5px;
+            }
+            width: 100% !important;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .posts-main,
+    .albums-main,
+    .todos-main {
+        margin-top: 22px !important;
+        .posts-body,
+        .albums-body,
+        .todos-body {
+            gap: 0px !important;
+            display: flex;
+            justify-content: space-between;
+
+            .post-card,
+            .album-card {
+                margin-top: -7px !important;
+                width: 48% !important;
+                margin-right: 10px;
+
+                .ant-card {
+                    width: 100% !important;
+                    .ant-card-body {
+                        padding: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .page-head {
+        text-align: center;
+
+        .head-filter-section {
+            .head-apply-all-button {
+                & > button {
+                    margin-bottom: 5px;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .todos-body {
+        display: flex;
+        flex-direction: column;
+        .todo-container {
+            .ant-ribbon-wrapper {
+                width: 50%;
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .page-head {
+        text-align: center;
+
+        .head-filter-section {
+            .head-apply-all-button {
+                box-shadow: none;
+                display: flex !important;
+                flex-direction: row !important;
+                position: relative;
+                padding: 0 !important;
+                margin: 4px 0 !important;
+
+                & > button {
+                    margin-right: 10px;
+                    width: auto !important;
+                }
+            }
+        }
+    }
+    .todo-container {
+        .ant-ribbon-wrapper {
+            width: 50%;
+        }
+    }
+    .post-card {
+        width: 400px !important;
+    }
+}

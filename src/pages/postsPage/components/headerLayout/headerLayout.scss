@@ -1,0 +1,35 @@
+/** @format */
+
+.header-layout {
+    position: relative;
+    margin-top: -15px;
+
+    .header-section {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .head-title {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            h2 {
+                color: var(--main-color);
+            }
+            .head-add-button {
+                margin-top: 4px;
+            }
+        }
+
+        .header-search {
+            margin-top: 4px;
+        }
+        .head-filters {
+            display: flex;
+            gap: 5px;
+            margin-top: 4px;
+            align-items: center;
+        }
+    }
+}
