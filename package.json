@@ -11,7 +11,8 @@
         "testui": "vitest --ui run",
         "build": "tsc && vite build",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "@ant-design/icons": "^5.2.6",
