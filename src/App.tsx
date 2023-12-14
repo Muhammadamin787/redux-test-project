@@ -17,7 +17,6 @@ function App() {
         <Route path='*' element={<NotFoundPage />} />
       </Route>
     ),
-    {basename: "/redux-test-project"}
   );
 
   return (
